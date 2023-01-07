@@ -1,0 +1,10 @@
+.body {
+  background-color: #e8e8e8;
+  height: 1700px;
+}
+.body .list {
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 36px;
+  color: #273d46;
+}
