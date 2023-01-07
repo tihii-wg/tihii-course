@@ -1,10 +1,117 @@
-.body {
-  background-color: #e8e8e8;
-  height: 1700px;
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
-.body .list {
-  font-family: Arial;
-  font-size: 20px;
-  line-height: 36px;
-  color: #273d46;
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+
+
+
+body {
+	width: 1440px;
+	height: 1700px;
+	background-color: #e8e8e8;
+	padding: 162px 0px 0px 292px;
+}
+
+.list {
+	position: relative;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 36px;
+	color: #273d46;
+}
+
+.list li{
+	list-style-type: none;
+}
+.list li::before{
+	content:"";
+	margin: 5px 100px 0px 0px;
+	height: 25px;
+	width: 25px;
+	background: url(../img/check_icon_37_green.png) left no-repeat;
+	position: absolute;
+}
+.list li:nth-child(1) {
+text-decoration: line-through;
+}
+
+.list li:nth-child(2) {
+font-weight: 700;
+}
+
+.list li:nth-child(3) {
+font-style: italic;
+}
+
+.list li:nth-child(4) {
+text-transform: uppercase;
+}
+
+li::before{
+	content: "";
+
+}
+.button {}
+
+.button-item {
+	width: 199px;
+height: 44px;
+box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+background-color: #80b7b3;
+border-radius: 30px;
+border: #80b7b3;
+}
+span{
+	font-family: Arial;
+font-size: 14px;
+line-height: 40px;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+color: #ffffff;
+}
+
+.input {}
+
+.input-item {
+	width: 294px;
+height: 52px;
+border: 1px solid #7fbed5;
+box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
 }
